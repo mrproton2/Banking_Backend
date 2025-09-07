@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: CRUD
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/userdb?useSSL=false&serverTimezone=Asia/Kolkata
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  sql:
+    init:
+      mode: always
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: abhishek501178@gmail.com
+    password: yhmtqvvwbdzsbven
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 8080
+
+jwt:
+  secret: MzJjaGFyYWN0ZXJsb25nc2VjcmV0a2V5MTIzNDU2Nzg5MA==
+  expiration: 3600000
